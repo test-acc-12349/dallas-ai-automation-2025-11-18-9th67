@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dallas AI Automation - Transform your business with intelligent local AI workflow automation and 24/7 smart customer support solutions.">
+    <meta name="keywords" content="AI automation, Dallas, workflow automation, customer support, AI solutions">
+    <meta name="author" content="Dallas AI Automation">
+    <meta property="og:title" content="Dallas AI Automation - Smart Business Solutions">
+    <meta property="og:description" content="Experience faster local operations with our AI-powered workflow automation and always-on support.">
+    <meta property="og:type" content="website">
+    <title>Dallas AI Automation - Intelligent Business Solutions</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .material-symbols-rounded {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FF7F7F 100%);
+        }
+        
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.85) 0%, rgba(26, 26, 26, 0.75) 100%);
+        }
+        
+        .btn-primary {
+            background-color: #FF5A5F;
+            transition: all 0.3s ease-out;
+        }
+        
+        .btn-primary:hover {
+            background-color: #E84A4F;
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(255, 90, 95, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: #FFD166;
+            transition: all 0.3s ease-out;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #FFC940;
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(255, 209, 102, 0.3);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease-out;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-out;
+        }
+        
+        .faq-icon.rotate-180 {
+            transform: rotate(180deg);
+        }
+        
+        .feature-icon {
+            color: #FF5A5F;
+        }
+        
+        .accent-text {
+            color: #FFD166;
+        }
+        
+        .dark-text {
+            color: #1A1A1A;
+        }
+        
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .nav-link {
+            color: #1A1A1A;
+            transition: color 0.3s ease-out;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: #FF5A5F;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #FF5A5F;
+            transition: width 0.3s ease-out;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .hero-title {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+        
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease-out;
+        }
+        
+        .testimonial-card:hover {
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+            transform: translateY(-5px);
+        }
+        
+        .star-rating {
+            color: #FFD166;
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease-out;
+        }
+        
+        .faq-answer {
+            transition: all 0.3s ease-out;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            opacity: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 w-full bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-4 md:py-6 flex justify-between items-center">
+            <div class="flex items-center justify-between w-full">
+                <a href="https://test-acc-12349.github.io/dallas-ai-automation-2025-11-18-9th67" class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center">
+                        <span class="material-symbols-rounded text-white text-2xl">bolt</span>
+                    </div>
+                    <span class="text-xl md:text-2xl font-bold dark-text hidden sm:inline">Dallas AI</span>
+                </a>
+                <a href="https://test-acc-12349.github.io/dallas-ai-automation-2025-11-18-9th67" class="nav-link text-sm font-medium">
+                    ← Back
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Terms of Service Main Content -->
+    <main>
+        <!-- Hero / Title Section -->
+        <section class="w-full py-20 md:py-28 px-8 md:px-16 bg-gradient-to-br from-gray-50 to-gray-100 border-b border-gray-200">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="hero-title dark-text mb-4">Privacy Policy</h1>
+                <p class="text-gray-600 text-base md:text-lg font-medium mb-3">
+                    Last updated: [Month] [Day], [Year]
+                </p>
+                <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+                    This Privacy Policy explains how Dallas AI Automation ("Dallas AI", "we", "us", or "our") collects, uses, discloses, and safeguards your information when you use our website, products, and services (collectively, the "Services"). By accessing or using the Services, you agree to the collection and use of information in accordance with this Privacy Policy.
+                </p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="w-full py-16 md:py-24 px-8 md:px-16 bg-white">
+            <div class="max-w-4xl mx-auto space-y-12">
+                <!-- 1. Information We Collect -->
+                <section>
+                    <h2 class="text-2xl md:text-3xl font-bold dark-text mb-4">1. Information We Collect</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        We collect different types of information to provide and improve our Services. The types of information we may collect include:
+                    </p>
+                    <h3 class="text-xl font-semibold dark-text mb-2">1.1 Information You Provide to Us</h3>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        When you use our Services, you may provide us with information, including but not limited to:
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 leading-relaxed mb-4">
+                        <li>Contact details such as your name, email address, phone number, and company information.</li>
+                        <li>Account credentials such as username, password, and authentication details.</li>
+                        <li>Billing information such as payment method, billing address, and tax information.</li>
+                        <li>Content you submit through the Services, including messages, files, or other materials.</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold dark-text mb-2">1.2 Information Collected Automatically</h3>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        When you access or use our Services, we may automatically collect certain information, including:
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 leading-relaxed mb-4">
+                        <li>Usage data, such as pages or features you access, time spent, and actions taken within the Services.</li>
+                        <li>Device and log information, including IP address, browser type, operating system, and device identifiers.</li>
+                        <li>Location information, which may be derived from your IP address or device settings.</li>
+                        <li>Cookies and similar tracking technologies to remember your preferences and analyze usage.</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold dark-text mb-2">1.3 Information from Third Parties</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        We may receive information about you from third parties, such as integration partners, analytics providers, or marketing platforms, where you have authorized those parties to share such information with us.
+                    </p>
+                </section>
+
+                <!-- 2. How We Use Your Information -->
+                <section>
+                    <h2 class="text-2xl md:text-3xl font-bold dark-text mb-4">2. How We Use Your Information</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        We use the information we collect for various purposes in connection with providing and improving our Services, including to:
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 leading-relaxed">
+                        <li>Provide, operate, maintain, and improve the Services.</li>
+                        <li>Create and manage your account, and authenticate your identity.</li>
+                        <li>Process your transactions and send related information, including confirmations and invoices.</li>
+                        <li>Communicate with you about updates, technical notices, security alerts, and administrative messages.</li>
+                        <li>Respond to your comments, questions, and customer support requests.</li>
+                        <li>Analyze usage trends and monitor the performance of the Services.</li>
+                        <li>Develop new products, services, features, and functionality.</li>
+                        <li>Protect the rights, property, or safety of Dallas AI, our users, or others.</li>
+                        <li>Comply with legal obligations and enforce our agreements.</li>
+                    </ul>
+                </section>
+
+                <!-- 3. Legal Bases for Processing (if applicable) -->
+                <section>
+                    <h2 class="text-2xl md:text-3xl font-bold dark-text mb-4">3. Legal Bases for Processing</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Where required by applicable law (such as the GDPR), we process your personal information only when we have a valid legal basis, including:
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 leading-relaxed mt-3">
+                        <li><span class="font-semibold">Consent:</span> You have given us consent to process your information for specific purposes.</li>
+                        <li><span class="font-semibold">Contract:</span> Processing is necessary to perform our contract with you or to take steps at your request before entering into a contract.</li>
+                        <li><span class="font-semibold">Legal obligation:</span> Processing is necessary to comply with our legal obligations.</li>
+                        <li><span class="font-semibold">Legitimate interests:</span> Processing is necessary for our legitimate business interests, provided those interests are not overridden by your rights and interests.</li>
+                    </ul>
+                </section>
+
+                <!-- 4. How We Share Your Information -->
+                <section>
+                    <h2 class="text-2xl md:text-3xl font-bold dark-text mb-4">4. How We Share Your Information</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        We may share your information in the following circumstances:
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 leading-relaxed">
+                        <li><span class="font-semibold">Service providers:</span> With vendors and service providers who perform services on our behalf, such as hosting, analytics, payment processing, and customer support.</li>
+                        <li><span class="font-semibold">Business partners:</span> With partners with whom we jointly offer products or services, or with whom we integrate our Services.</li>
+                        <li><span class="font-semibold">Compliance and protection:</span> When we believe disclosure is necessary to comply with applicable law, regulation, legal process, or governmental request; to enforce our agreements; or to protect the rights, property, or safety of Dallas AI, our users, or others.</li>
+                        <li><span class="font-semibold">Business transfers:</span> In connection with a merger, acquisition, financing, restructuring, bankruptcy, or sale of all or a portion of our business or assets.</li>
+                        <li><span class="font-semibold">With your consent:</span> With other third parties when you have given us consent or instruction to do so.</li>
+                    </ul>
+                </section>
+
+                <!-- 5. Data Retention -->
+                <section>
+                    <h2 class="text-2xl md:text-3xl font-bold dark-text mb-4">5. Data Retention</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        We retain your personal information only for as long as necessary to fulfill the purposes for which we collected it, including to comply with legal, accounting, or reporting obligations, to resolve disputes, and to enforce our agreements. When we no longer need to process your information, we will delete or anonymize it in accordance with our data retention policies.
+                    </p>
+                </section>
+
+                <!-- 6. Data Security -->
+                <section>
+                    <h2 class="text-2xl md:text-3xl font-bold dark-text mb-4">6. Data Security</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        We implement appropriate technical and organizational measures designed to protect your personal information against accidental or unlawful destruction, loss, alteration, unauthorized disclosure, or access. However, no method of transmission over the internet or method of electronic storage is completely secure, and we cannot guarantee absolute security. You are responsible for maintaining the confidentiality of your account credentials and for all activities under your account.
+                    </p>
+                </section>
+
+                <!-- 7. Your Rights and Choices -->
+                <section>
+                    <h2 class="text-2xl md:text-3xl font-bold dark-text mb-4">7. Your Rights and Choices</h2>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        Depending on your jurisdiction, you may have certain rights regarding your personal information, which may include:
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 leading-relaxed mb-4">
+                        <li>The right to access the personal information we hold about you.</li>
+                        <li>The right to request correction of inaccurate or incomplete information.</li>
+                        <li>The right to request deletion of your personal information, subject to certain exceptions.</li>
+                        <li>The right to object to or restrict our processing of your information.</li>
+                        <li>The right to withdraw your consent where processing is based on consent.</li>
+                        <li>The right to data portability, where applicable.</li>
+                    </ul>
+                    <p class="text-gray-700 leading-relaxed">
+                        To exercise any of these rights, please contact us using the details provided in the <span class="font-semibold">Contact Us</span> section below. We may request specific information from you to help us confirm your identity and process your request.
+                    </p>
+                </section>
+
+                <!-- 8. International Data Transfers -->
+                <section>
+                    <h2 class="text-2xl md:text-3xl font-bold dark-text mb-4">8. International Data Transfers</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Your information may be transferred to and processed in countries other than your country of residence, which may have data protection laws that differ from those in your jurisdiction. Where we transfer personal information internationally, we take appropriate measures to ensure an adequate level of protection in accordance with applicable law, such as implementing standard contractual clauses or relying on other lawful transfer mechanisms.
+                    </p>
+                </section>
+
+                <!-- 9. Children's Privacy -->
+                <section>
+                    <h2 class="text-2xl md:text-3xl font-bold dark-text mb-4">9. Children’s Privacy</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Our Services are not directed to individuals under the age of 16, and we do not knowingly collect personal information from children under 16. If we become aware that we have collected personal information from a child under 16 without verification of parental consent, we will take steps to delete such information. If you believe we may have collected information from a child, please contact us.
+                    </p>
+                </section>
+
+                <!-- 10. Changes to This Privacy Policy -->
+                <section>
+                    <h2 class="text-2xl md:text-3xl font-bold dark-text mb-4">10. Changes to This Privacy Policy</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        We may update this Privacy Policy from time to time to reflect changes in our practices, technologies, legal requirements, or other factors. When we make changes, we will revise the "Last updated" date at the top of this policy and, where appropriate, provide additional notice. We encourage you to review this Privacy Policy periodically to stay informed about our information practices.
+                    </p>
+                </section>
+
+                <!-- 11. Contact Information -->
+                <section>
+                    <h2 class="text-2xl md:text-3xl font-bold dark-text mb-4">11. Contact Us</h2>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        If you have any questions or concerns about this Privacy Policy or our privacy practices, or if you would like to exercise your rights, you may contact us at:
+                    </p>
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-5 space-y-1 text-gray-700">
+                        <p><span class="font-semibold">Dallas AI Automation</span></p>
+                        <p>123 Business St, Suite 100</p>
+                        <p>Dallas, TX 75201</p>
+                        <p>Email: <a href="mailto:admin@dallas.com" class="text-[#FF5A5F] hover:underline">admin@dallas.com</a></p>
+                        <p>Phone: <a href="tel:+1234567890" class="text-[#FF5A5F] hover:underline">+1 (234) 567-890</a></p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (kept exact) -->
+    <footer class="w-full bg-[#1A1A1A] text-white py-16 md:py-20 px-8 md:px-16">
+        <div class="max-w-7xl mx-auto">
+            <!-- Footer Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12 pb-12 border-b border-gray-700">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 gradient-primary rounded-full flex items-center justify-center">
+                            <span class="material-symbols-rounded text-white text-2xl">bolt</span>
+                        </div>
+                        <span class="text-xl font-bold">Dallas AI</span>
+                    </div>
+                    <p class="text-gray-400 font-medium leading-relaxed mb-6">
+                        Transforming businesses with intelligent AI automation solutions that drive growth and efficiency.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#FF5A5F] transition-colors duration-300">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#FF5A5F] transition-colors duration-300">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#FF5A5F] transition-colors duration-300">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#FF5A5F] transition-colors duration-300">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Product</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">FAQ</a></li>
+                        <li><a href="https://dallas.com" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="blog.html" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Partners</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Security</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 font-medium text-center md:text-left mb-4 md:mb-0">
+                    &copy; 2025 Dallas AI Automation. All rights reserved.
+                </p>
+                <div class="flex gap-6">
+                    <p class="text-gray-400 font-medium">
+                        <span class="material-symbols-rounded text-lg align-middle">mail</span>
+                        <a href="mailto:admin@dallas.com" class="hover:text-[#FF5A5F] transition-colors duration-300">admin@dallas.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript (kept for consistency, though not heavily used on this page) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
